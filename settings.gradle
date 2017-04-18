@@ -1,1 +1,1 @@
-include ':app', ':FaceOff'
+include ':app', ':FaceOff', ':DreamWaker'
