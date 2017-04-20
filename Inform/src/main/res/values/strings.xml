@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_input">请输入短信内容：</string>
+    <string name="app_name">班级通知</string>
+    <string name="edit_input">点此输入短信内容</string>
+    <string name="btn_send">发送</string>
+
+</resources>

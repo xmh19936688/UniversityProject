@@ -1,1 +1,1 @@
-include ':FaceOff', ':DreamWaker', ':MyLessons'
+include ':FaceOff', ':DreamWaker', ':MyLessons', ':Inform'
