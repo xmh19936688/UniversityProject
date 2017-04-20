@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back" >
+
+    <TableRow
+        android:layout_marginBottom="20dip"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/head"
+            android:gravity="center"
+            android:text="@string/text_title"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left" >
+
+        <TextView android:id="@+id/date"/>
+    </TableRow>
+
+    <TableRow android:gravity="center" >
+
+        <ListView
+            android:id="@+id/list_lessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+</TableLayout>

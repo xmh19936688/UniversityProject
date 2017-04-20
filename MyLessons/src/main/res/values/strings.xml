@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">上课啦</string>
+    <string name="text_title">今日课程</string>
+    <string name="text_help">课表升级版\n·一点即查今日课程。\n·根据时间查询课程。\n·左右滑动浏览课程。\n·摇晃手机转至今日。\n·点击课程查看信息。\n·长按课程编辑信息。\n</string>
+
+</resources>
