@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">轻松进销存</string>
+    
+    <string name="password_text">请输入密码</string>
+    <string name="login_btn">进入</string>
+    
+    <string name="buy_btn">进货</string>
+    <string name="sell_btn">销售</string>
+    <string name="stock_btn">存量</string>
+    <string name="password_btn">修改密码</string>
+    
+    <string name="old_password_text">当前密码</string>
+    <string name="new_password_text">新的密码</string>
+    <string name="sure_password_text">确认密码</string>
+    <string name="set_password_btn">设置</string>
+
+    <string name="fallname_text">全名</string>
+    <string name="amount_text">数量</string>
+    <string name="in_price_text">进价</string>
+    <string name="money_text">利润</string>
+    <string name="remarks_text">备注</string>
+    
+    <string name="stock_title_text">当前库存</string>
+    <string name="today_btn">日结</string>
+    <string name="month_btn">月结</string>
+    <string name="total_btn">总结</string>
+    
+    <string name="out_price_text">售价</string>
+    
+    <string name="sure_btn">√</string>
+    <string name="back_btn">＜</string>
+    <string name="find_btn">〇</string>
+    <string name="forward_btn">＞</string>
+    
+    <string name="buylist_title_text">进货记录</string>
+    <string name="selllist_title_text">销售记录</string>
+    <string name="moneylist_title_text">盈利明细</string>
+    <string name="date_text">日期</string>
+    <string name="total_text">小计</string>
+    
+    <string name="year_text">年</string>
+    <string name="month_text">月</string>
+    <string name="day_text">日</string>
+    
+    <string name="key_find">关键字</string>
+</resources>

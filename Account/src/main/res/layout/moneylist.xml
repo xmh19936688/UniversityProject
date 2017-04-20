@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_stock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/moneylist_title_text"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_tablehead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_stock_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/date_text"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_fallname"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/fallname_text"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_key"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:hint="@string/key_find"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@color/yellowcolor" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/amount_text"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@color/yellowcolor" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/in_price_text"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@color/yellowcolor" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/out_price_text"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@color/yellowcolor" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/money_text"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@color/yellowcolor" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/total_text"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@color/yellowcolor" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/remarks_text"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/lv_stock"
+        android:background="@color/yellowcolor" />
+
+    <ListView
+        android:id="@+id/lv_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_list_select"
+        android:layout_below="@+id/ll_tablehead" />
+
+    <LinearLayout
+        android:id="@+id/ll_date_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_year"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="@string/year_text"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_month"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/month_text"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_day"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/day_text"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_sure_date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sure_btn"
+            android:textColor="@color/green"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back_btn"
+            android:textColor="@color/yellowcolor"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/find_btn"
+            android:textColor="@color/yellowcolor"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/forward_btn"
+            android:textColor="@color/yellowcolor"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

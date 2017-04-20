@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            
+            <TextView
+                android:id="@+id/tv_fallname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="@string/fallname_text"/>
+   		    
+            <TextView
+                android:id="@+id/tv_amount"
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="wrap_content"
+   		        android:layout_below="@+id/tv_fallname"
+   		        android:textSize="17dp"
+   		        android:text="@string/amount_text"/>
+            
+            <TextView
+                android:id="@+id/tv_in_price"
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="wrap_content"
+   		        android:layout_below="@+id/tv_amount"
+   		        android:textSize="17dp"
+   		        android:text="@string/in_price_text"/>
+            
+            <TextView 
+                android:id="@+id/tv_remarks"
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="wrap_content"
+   		        android:layout_below="@+id/tv_in_price"
+   		        android:textSize="17dp"
+   		        android:text="@string/remarks_text"/>
+            
+            <EditText
+   		        android:id="@+id/et_fallname"
+   		        android:layout_width="200dp"
+   		        android:layout_height="wrap_content"
+   		        android:layout_toRightOf="@+id/tv_fallname"
+   		        android:layout_alignBottom="@+id/tv_fallname"/>
+            
+            <EditText
+   		        android:id="@+id/et_amount"
+   		        android:layout_width="200dp"
+   		        android:layout_height="wrap_content"
+   		        android:layout_toRightOf="@+id/tv_amount"
+   		        android:layout_alignBottom="@+id/tv_amount"
+   		        android:inputType="number"/>
+   		    <EditText
+   		        android:id="@+id/et_in_price"
+   		        android:layout_width="200dp"
+   		        android:layout_height="wrap_content"
+   		        android:layout_toRightOf="@+id/tv_in_price"
+   		        android:layout_alignBottom="@+id/tv_in_price"
+   		        android:inputType="numberDecimal"/>
+   		    <EditText
+   		        android:id="@+id/et_remarks"
+   		        android:layout_width="200dp"
+   		        android:layout_height="wrap_content"
+   		        android:layout_toRightOf="@+id/tv_remarks"
+   		        android:layout_alignBottom="@+id/tv_remarks"/>
+            <Button 
+                android:id="@+id/btn_buy"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/et_remarks"
+	            android:textSize="17sp"
+	            android:text="@string/buy_btn"/>
+        </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
